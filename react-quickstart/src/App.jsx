@@ -9,13 +9,22 @@ function App() {
   const headerStyles = {
     color: 'red'
   }
-  const data = 'Sample Data'
+
+  const value = true
+  let data;
+
+  if (value) {
+    data = "I'm real"
+  } else {
+    data = "I'm fake"
+  }
+ 
 
   return (
     <>
       <Component />
       <h1 style={headerStyles}>I am writing in markup with JSX</h1>
-      {data}
+      <p>{data}</p>
     </>
   );
 }
