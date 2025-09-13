@@ -9,6 +9,7 @@ function App() {
   return (
     <>
       <Component />
+      <h1>I am writing in markup with JSX</h1>
     </>
   );
 }
