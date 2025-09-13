@@ -9,11 +9,13 @@ function App() {
   const headerStyles = {
     color: 'red'
   }
-  
+  const data = 'Sample Data'
+
   return (
     <>
       <Component />
       <h1 style={headerStyles}>I am writing in markup with JSX</h1>
+      {data}
     </>
   );
 }
