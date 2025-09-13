@@ -19,12 +19,20 @@ function App() {
     data = "I'm fake"
   }
  
+  const infos = [
+    {name: 'rshdgvn', age: 20},
+    {name: 'vincent', age: 22},
+    {name: 'ryan', age: 22},
+  ]
 
   return (
     <>
       <Component />
       <h1 style={headerStyles}>I am writing in markup with JSX</h1>
       <p>{data}</p>
+      <ul>
+        {infos.map((info)=><li>{`Hello i am ${info.name} and I am ${info.age} years old`}</li>)}
+      </ul>
     </>
   );
 }
