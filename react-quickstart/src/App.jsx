@@ -5,6 +5,12 @@ function Component() {
   return <h1>This is a component</h1>;
 }
 
+function ComponentToShare ({data}) {
+  return (
+    <h1>Im getting this data: <span>`{data}`</span> fromm app</h1>
+  )
+}
+
 function App() {
   const headerStyles = {
     color: "red",
@@ -47,6 +53,7 @@ function App() {
         ))}
       </ul>
       <button onClick={handleEvents}>Click</button>
+      <ComponentToShare data={data}/>
     </>
   );
 }
