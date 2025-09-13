@@ -6,10 +6,14 @@ function Component() {
 }
 
 function App() {
+  const headerStyles = {
+    color: 'red'
+  }
+  
   return (
     <>
       <Component />
-      <h1>I am writing in markup with JSX</h1>
+      <h1 style={headerStyles}>I am writing in markup with JSX</h1>
     </>
   );
 }
