@@ -5,7 +5,7 @@ import TodoList from "./components/ToDoList";
 function App() {
   return (
     <>
-      <Avatar />
+      {/* <Avatar /> */}
       <TodoList />
     </>
   );
